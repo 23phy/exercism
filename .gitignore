@@ -1,0 +1,6 @@
+typescript/**/*/node_modules
+typescript/**/*/.exercism
+typescript/**/*/tsconfig.json
+typescript/**/*/tslint.json
+typescript/**/*/package-lock.json
+typescript/**/*/yarn.lock
