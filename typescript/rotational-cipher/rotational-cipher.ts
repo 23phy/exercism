@@ -1,7 +1,7 @@
 export default class RotationalCipher {
     constructor() {};
     public static rotate(text: string, rotateCount: number = 1): string {
-        if(rotateCount < 0) {
+        if(rotateCount <= 0) {
             return text;
         }
 
