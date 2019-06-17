@@ -5,14 +5,13 @@ export default class Transcriptor {
         ['T', 'A'],
         ['A', 'U'],
     ]);
+    private static DNA_MATCH: RegExp = new RegExp(`^[${Array.from(Transcriptor.DNA_RNA.keys()).join('')}]+$`)
     constructor() {};
     
     public toRna(DNAStrand: string): string {
-        return DNAStrand.split('').reduce((nucleotides: string, currentNucleotide: string): string => {
-            if(!Transcriptor.DNA_RNA.has(currentNucleotide)) {
-                throw new Error('Invalid input DNA.');
-            }
-            return nucleotides + Transcriptor.DNA_RNA.get(currentNucleotide);
-        }, '');
+        if(!Transcriptor.DNA_MATCH.test(DNAStrand)) {
+            throw new Error('Invalid input DNA.');
+        }
+        return DNAStrand.split('').reduce((nucleotides: string, currentNucleotide: string) => nucleotides + Transcriptor.DNA_RNA.get(currentNucleotide), '');
     }
 }
