@@ -33,3 +33,7 @@ java/**/*/build
 java/**/*/.classpath
 java/**/*/.project
 java/**/*/build.gradle
+
+# Lua
+lua/**/*/.exercism
+lua/**/*/.busted
