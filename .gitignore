@@ -5,6 +5,10 @@ typescript/**/*/tsconfig.json
 typescript/**/*/tslint.json
 typescript/**/*/package-lock.json
 typescript/**/*/yarn.lock
+typescript/**/*/.eslintignore
+typescript/**/*/.eslintrc
+typescript/**/*/jest.config.js
+
 
 # JavaScript
 javascript/**/*/node_modules
