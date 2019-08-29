@@ -1,6 +1,31 @@
+# TypeScript
 typescript/**/*/node_modules
 typescript/**/*/.exercism
 typescript/**/*/tsconfig.json
 typescript/**/*/tslint.json
 typescript/**/*/package-lock.json
 typescript/**/*/yarn.lock
+
+# JavaScript
+javascript/**/*/node_modules
+typescript/**/*/.exercism
+
+# Bash
+
+# Go
+go/**/*/.exercism
+go/playground.go
+
+# Java
+java/.gradle
+java/.idea
+java/.vscode
+java/**/*/.exercism
+java/**/*/.gradle
+java/**/*/.settings
+java/**/*/.settings
+java/**/*/bin
+java/**/*/build
+java/**/*/.classpath
+java/**/*/.project
+java/**/*/build.gradle
